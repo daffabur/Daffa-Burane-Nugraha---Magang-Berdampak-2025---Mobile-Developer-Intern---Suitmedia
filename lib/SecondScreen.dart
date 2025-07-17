@@ -10,7 +10,7 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Screen'),
-        centerTitle: true, // <--- TAMBAHKAN BARIS INI
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios),
           onPressed: () => Navigator.pop(context),
@@ -39,7 +39,7 @@ class SecondScreen extends StatelessWidget {
             const Spacer(),
             const Center(
               child: Text(
-                'Selected User Name', // This will be dynamic
+                'Selected User Name',
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
@@ -49,7 +49,7 @@ class SecondScreen extends StatelessWidget {
                 return Center(
                   child: Text(
                     userProvider.selectedUserName.isEmpty
-                        ? '' // Or a placeholder like "No user selected"
+                        ? ''
                         : userProvider.selectedUserName,
                     style: const TextStyle(
                       fontSize: 28,
@@ -68,7 +68,7 @@ class SecondScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/third');
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.teal, // Example color
+                  backgroundColor: Colors.teal,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
                 child: const Text(

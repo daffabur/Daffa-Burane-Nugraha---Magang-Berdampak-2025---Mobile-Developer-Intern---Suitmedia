@@ -9,11 +9,11 @@ class UserProvider with ChangeNotifier {
 
   void setUserName(String name) {
     _userName = name;
-    notifyListeners(); // Notify listeners that the data has changed
+    notifyListeners(); 
   }
 
   void setSelectedUserName(String name) {
     _selectedUserName = name;
-    notifyListeners(); // Notify listeners that the data has changed
+    notifyListeners(); 
   }
 }
